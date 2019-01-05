@@ -204,7 +204,7 @@ const yesNo = {
   1:'是'
 };
 
-const globalUrl = "http://58.144.34.96:5000/web_manager/public/index.php/index/";
+const globalUrl = "http://58.144.34.96:5001/web_manager/public/index.php/index/";
 const otherUrl = {
   User:['User/registerForWeb','User/login'],
   Work:[
@@ -236,7 +236,7 @@ const xxx = [
 
 const aaa = [
   // {0:'no',1:'序号'},
-  {0:"area",1:{title:'所属区域',option:['天府镇']}},
+  {0:"area",1:{title:'所属区域',option:['童家溪镇']}},
   {0:'community_id',1:'所属小区'},
   {0:'username',1:'姓名'},
   {0:'sex',1:{title:'性别',option:['男','女']}},
@@ -327,7 +327,7 @@ const sexOption = ['男','女'];
 
 const dataYesNo = ['has_jycard','is_renthouse','is_insured','sex'];
 
-const areaOption = {0:'天府镇'};
+const areaOption = {0:'童家溪镇'};
 
 const userStatusOption = ['未启用','已启用'];
 

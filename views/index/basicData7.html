@@ -75,7 +75,7 @@
         {0:'sale_area', 1:'经营范围', 2:data['store_holder']||''},
         // {0:'store_audit',        1:'状态',    2:data['store_audit']},
       ]
-      var url =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Courtdata/editStoreData';
+      var url =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Courtdata/editStoreData';
       iframe.getFromParent(editData,url);
     }
     function editEnd(){
@@ -94,13 +94,13 @@
         {0:'sale_area', 1:'经营范围'},
         // {0:'state',        1:"状态"},
       ]
-      var url =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Courtdata/addStoreData';
+      var url =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Courtdata/addStoreData';
       iframe.getFromParent(addData,url);
     }
     var correspond = {};
-    var editAjaxUrl =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Courtdata/getStoreDataList';
+    var editAjaxUrl =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Courtdata/getStoreDataList';
     var detailUrl = './alert/detail.html'
-    var deleteUrl =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Courtdata/deleteStoreData';
+    var deleteUrl =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Courtdata/deleteStoreData';
     var getTable = function() {
       AJAX({
         url: editAjaxUrl,
@@ -119,7 +119,7 @@
             editAjaxUrl:editAjaxUrl,
             deleteUrl:deleteUrl,
             detailUrl:detailUrl,
-            checkUrl:'http://58.144.34.96:5000/web_manager/public/index.php/index/Courtdata/auditStore'
+            checkUrl:'http://58.144.34.96:5001/web_manager/public/index.php/index/Courtdata/auditStore'
           });
           }else{
             layer.msg('错误');

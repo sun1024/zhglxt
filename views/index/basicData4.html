@@ -72,7 +72,7 @@
         {0:'facility_site', 1:'公共设施地址', 2:data['facility_site']},
         // {0:'facility_pic', 1:'公共设施图片', 2:data['facility_site']},
       ]
-      var url =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Basicdata/editFacility';
+      var url =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Basicdata/editFacility';
       iframe.getFromParent(editData,url);
     }
     function editEnd(){
@@ -90,13 +90,13 @@
         // {0:'facility_pic', 1:'公共设施图片'},
         // {0:'facility_status',         1:'状态'},
       ]
-      var url =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Basicdata/addFacility';
+      var url =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Basicdata/addFacility';
       iframe.getFromParent(addData,url);
     }
     var correspond = {};
-    var editAjaxUrl =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Basicdata/getFacilityList';
+    var editAjaxUrl =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Basicdata/getFacilityList';
     var detailUrl = './alert/detail.html'
-    var deleteUrl =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Basicdata/deleteFacility';
+    var deleteUrl =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Basicdata/deleteFacility';
     var getTable = function() {
       AJAX({
         url: editAjaxUrl,
@@ -115,7 +115,7 @@
             editAjaxUrl:editAjaxUrl,
             deleteUrl:deleteUrl,
             detailUrl:detailUrl,
-            checkUrl:'http://58.144.34.96:5000/web_manager/public/index.php/index/Basicdata/auditFacility'
+            checkUrl:'http://58.144.34.96:5001/web_manager/public/index.php/index/Basicdata/auditFacility'
           });
           }else{
             layer.msg('错误');

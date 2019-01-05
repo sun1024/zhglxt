@@ -297,7 +297,7 @@ function setTable(obj) {
         var idX = this.parentNode.parentNode.parentNode.parentNode.children[1].getElementsByTagName('div')[0].innerText;
         AJAX({
           // url:obj.postFinish,
-          url:'http://58.144.34.96:5000/web_manager/public/index.php/index/Data/selectMembersByName',
+          url:'http://58.144.34.96:5001/web_manager/public/index.php/index/Data/selectMembersByName',
           method:'POST',
           data:{
             house_holder:obj.data[parseInt(idX)-1].house_holder
@@ -1241,7 +1241,7 @@ function AJAX(obj){
 var gridOption = [];
 function setGridOption(){
   AJAX({
-    url: 'http://58.144.34.96:5000/web_manager/public/index.php/index/System/gridList',
+    url: 'http://58.144.34.96:5001/web_manager/public/index.php/index/System/gridList',
     method:'POST',
     success:function(data){
       var _data = data.data;

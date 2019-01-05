@@ -142,7 +142,7 @@
         {0:'is_cflac_member',          1:{title:'文联会员',option:['否','是']}},
         {0:'is_ftu_member',          1:{title:'工会会员',option:['否','是']}},
       ];
-      var url =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Data/editPeople';
+      var url =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Data/editPeople';
       iframe.getFromParent(editData,url);
     }
     function editEnd(){
@@ -161,16 +161,16 @@
       //   {0:"content",1:"日志内容"},
       // ]
       var addData = aaa;
-      var url =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Data/addPeopleData';
+      var url =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Data/addPeopleData';
       iframe.getFromParent(addData,url);
     }
     var correspond = {};
-    var editAjaxUrl =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Data/editPeople';
+    var editAjaxUrl =  'http://58.144.34.96:5001/web_manager/public/index.php/index/Data/editPeople';
     var detailUrl = './alert/detail.html';
-    var deleteUrl = 'http://58.144.34.96:5000/web_manager/public/index.php/index/Data/deletePeopleData';
+    var deleteUrl = 'http://58.144.34.96:5001/web_manager/public/index.php/index/Data/deletePeopleData';
     var getTable = function() {
       AJAX({
-        url: 'http://58.144.34.96:5000/web_manager/public/index.php/index/Data/getAttentionList',
+        url: 'http://58.144.34.96:5001/web_manager/public/index.php/index/Data/getAttentionList',
         method: 'GET',
         success:function(data) {
           if(data.state==200){
