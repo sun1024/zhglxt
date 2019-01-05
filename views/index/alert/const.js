@@ -225,7 +225,7 @@ const logType = {
   5:'重点人员寻访'
 };
 
-const indexOne = ['role_id','log_type','emergency_level','grid','sex'];
+const indexOne = ['role_id','log_type','sex'];
 
 const timeID = ['time','time2'];
 
@@ -252,10 +252,10 @@ const aaa = [
   // {0:'birth_data',1:'出生日期'},
   // {0:'org_id',1:'组织关系'},
   {0:"grid",1:{title:'网格',option:{
-    0:"代家沟组",
-    1:"自生桥组",
-    2:"三才生组",
-    3:"土地垭组",
+    0:"三溪口",
+    // 1:"自生桥组",
+    // 2:"三才生组",
+    // 3:"土地垭组",
   }}},
   {0:'building_id',1:'所属楼栋'},
   // {0:'unit_id',1:'所属单元'},
@@ -428,8 +428,8 @@ const gridStatus = {
 
 const gridTestOption = {
   0:"",
-  1:"代家沟组",
-  2:"自生桥组",
-  3:"三才生组",
-  4:"土地垭组",
+  // 1:"代家沟组",
+  // 2:"自生桥组",
+  // 3:"三才生组",
+  // 4:"土地垭组",
 }
