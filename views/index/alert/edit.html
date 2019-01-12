@@ -173,8 +173,8 @@ height:100%;" id="{{d[index][0]}}">
         for (let i in elData) {
           if (document.querySelector('#' + elData[i][0]).value == '') {
             if(notMust.indexOf(elData[i][0])==-1){
-              layer.msg('请完善信息');
-              return;
+              // layer.msg('请完善信息');
+              // return;
             }
           }else{
             if(optionAdd.indexOf(elData[i][0])!=-1){  //option
@@ -191,16 +191,16 @@ height:100%;" id="{{d[index][0]}}">
               formdata.append("pic[]", $('#pic')[0].files[0]);
             }else if(postTimeYear.indexOf(elData[i][0])!=-1){
               if($('#'+elData[i][0]+" #time").val()==''){
-                layer.msg('请完善信息');
-                return;
+                // layer.msg('请完善信息');
+                // return;
               }
               let str = $('#'+elData[i][0]+" #time").val();
               postJson[elData[i][0]] = str;
             }else if(postTime.indexOf(elData[i][0])!=-1){
               //时间戳
               if($('#'+elData[i][0]+" #time").val()=='' || $('#'+elData[i][0]+" #time2").val()==''){
-                layer.msg('请完善信息');
-                return;
+                // layer.msg('请完善信息');
+                // return;
               }
               let str = $('#'+elData[i][0]+" #time").val() +" "+$('#'+elData[i][0]+" #time2").val();
               var str2 = new Date(str);
