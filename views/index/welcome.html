@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="../../layuiadmin/layui/css/layui.css" media="all">
   <link rel="stylesheet" type="text/css" href="../../static/admin/css/admin.css"/>
   <script src="../../static/admin/lib/echarts/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../layuiadmin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./alert/const.js"></script>
 </head>
 
 <body>
@@ -78,7 +81,7 @@
   </div>
 
 
-  <div class="welcome-lower">
+  <!-- <div class="welcome-lower">
     <div class="layui-collapse">
       <div class="layui-colla-item">
         <h2 class="welcome-upper-center-h2">事件统计</h2>
@@ -93,7 +96,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <script src="../../layuiadmin/layui/layui.js" type="text/javascript" charset="utf-8"></script>
 <script src="../../static/admin/js/common.js" type="text/javascript" charset="utf-8"></script>
@@ -239,26 +242,34 @@
   layui.use(['jquery', 'element', 'layer','table'], function () {
     var $ = layui.jquery;
     var table = layui.table;
-    table.render({
-      elem: '#txl'
-      // ,url:'/demo/table/user/'
-      ,data:[{id:1}]
-      ,height:'370px'
-      ,page: {
-        layout: ['limit', 'count', 'prev', 'page', 'next', 'skip']
-        , groups: 1
-        , first: false
-        , last: false
+    AJAX({
+      url:'http://58.144.34.96:5000/web_manager/public/index.php/index/System/gridAdminList',
+      method:'GET',
+      success:function(data){
+        var xData = data.data;
+        table.render({
+          elem: '#txl'
+          // ,url:'/demo/table/user/'
+          ,data:xData
+          ,height:'370px'
+          ,page: {
+          layout: ['limit', 'count', 'prev', 'page', 'next', 'skip']
+          , groups: 1
+          , first: false
+          , last: false
       }
-        ,cellMinWidth: 80
+      ,cellMinWidth: 80
       ,cols: [[
         {field:'id', title: 'ID', sort: true}
-        ,{field:'username', title: '姓名'}
-        ,{field:'wealth', title: '服务范围'}
-        ,{field:'wealth', title: '电话'}
-        ,{field:'wealth', title: '一键呼叫'}
+        ,{field:'name', title: '姓名'}
+        ,{field:'server_area', title: '服务范围'}
+        ,{field:'communication_phone', title: '电话'}
+        // ,{field:'wealth', title: '一键呼叫'}
       ]]
     });
+      }
+    })
+
   })
 </script>
 <script>
