@@ -65,10 +65,10 @@
     function editSuc(layero, index, data){
       var iframe = window['layui-layer-iframe' + index];
       var editData = [
-        {0:'id',       1:'ID   ',   2:data['id']},
+        {0:'id',       1:'ID   ',   2:data['id']||''},
         // {0:'area',     1:"所属区域", 2:data['area']},
         {0:"area",1:{title:'所属区域',option:areaOption}},
-        {0:"company_name",    1:'企业名称', 2:data['company_name']},
+        {0:"company_name",    1:'企业名称', 2:data['company_name']||''},
         {0:"property",1:{title:'企业性质',option:propertyOption}},
         {0:"industry",1:{title:'所处行业',option:industryOption}},
         {0:"company_size",1:{title:'企业规模',option:companySizeOption}},

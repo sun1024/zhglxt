@@ -62,17 +62,17 @@
     function editSuc(layero, index,data){
       var iframe = window['layui-layer-iframe' + index];
       var editData = [
-        {0:'id',1:'ID',2:data['id']},
-        {0:"name",1:"姓名",2:data['name']},
-        {0:"age",1:"年龄",2:data['age']},
+        {0:'id',1:'ID',2:data['id']||''},
+        {0:"name",1:"姓名",2:data['name']||''},
+        {0:"age",1:"年龄",2:data['age']||''},
         {0:"grid",1:{title:'网格',option:gridOption}},
-        {0:'id_card',1:'身份证',2:data['id_card']},
+        {0:'id_card',1:'身份证',2:data['id_card']||''},
         {0:"sex",1:{
             'title':'性别',
             'option':['男','女 ']
           }},
-        {0:"communication_phone",1:"联系电话",2:data['communication_phone']},
-        {0:"server_area",1:"服务区域",2:data['server_area']},
+        {0:"communication_phone",1:"联系电话",2:data['communication_phone']||''},
+        {0:"server_area",1:"服务区域",2:data['server_area']||''},
         // {0:"pic",1:"图片",2:data['icon']}
       ]
       var url =  globalUrl+'System/gridAdminEdit';
