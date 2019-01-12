@@ -328,7 +328,7 @@ const sdlvTime = ['birth_data','in_date','out_date'];
 const sdlrOption = ['area','grid','sex','is_insured','is_renthouse','marriage','political_status','education','has_jycard'];
 
 
-const sexIndex = {0:'男',1:'女','男性':'男','女性':'女'};
+const sexIndex = {0:'男',1:'女','男性':'男','女性':'女','':'','null':''};
 const sexOption = ['男','女'];
 const sdlrIndex = ['area','grid'];
 const dataYesNo = ['has_jycard','is_renthouse','is_insured','sex'];
