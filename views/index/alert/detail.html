@@ -79,6 +79,14 @@
           {{logType[d[0][i]]}}
         </th>
         <!-- 详情数字转文字 -->
+        {{# }else if(i=='mission_level'){ }}
+        <th class="right">
+          {{level[d[0][i]]}}
+        </th>
+        {{# }else if(i=='mission_type'){ }}
+        <th class="right">
+          {{missionType[d[0][i]]}}
+        </th>
         {{# }else if(i=='area'){ }}
         <th class="right">
           {{areaOption[d[0][i]]}}
