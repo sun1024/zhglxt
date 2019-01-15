@@ -22,7 +22,7 @@ const ys = {
   "edit_time":'编辑时间',
   "created_at":"创建时间",
   "not_before":"截至时间",
-  "mission_type":"事件类型",
+  "mission_type":"任务类型",
   "mission_level":"任务等级",
   "source":"事件来源",
   "operator":"任务发布人",
@@ -132,6 +132,28 @@ const ys = {
   'store_address': '商铺地址',
   'holder_tel':'店主电话',
   'sale_area':'经营范围',
+  //是否
+  // 'is_single_old':'独居老人',
+  // 'mental_disease':'精神障碍',
+  // 'is_correctional':'社区矫正人员',
+  // 'is_released':'刑满释放人员',
+  // 'is_xj':'XJ人员',
+  // 'is_xd':'XD人员',
+  // 'is_special_care':'优抚对象',
+  // 'is_disabled':'残疾人',
+  // 'is_leftover_children':'留守儿童',
+  // 'has_critical_disease':'重疾人员',
+  // 'is_empty_nester':'空巢老人',
+  // 'is_poor':'经济困难人员',
+  // 'is_veteran':'退伍军人',
+  // 'is_single_parent':'单亲家庭',
+  // 'is_jobless':'下岗职工',
+  // 'is_sanwu':'三无人员',
+  // 'is_dibao':'低保人员',
+  // 'is_overseas_student':'留学人员',
+  // 'is_overseas_chinese':'归国华侨',
+  // 'is_cflac_member':'文联会员',
+  // 'is_ftu_member':'工会会员',
   /*%%%%%%%%%%%%%%%%%%%%  zhouyang  %%%%%%%%%%%%%%%%%%%%*/
   //房屋（户主)
   'house_num': '门牌号',
@@ -432,8 +454,15 @@ const gridStatus = {
   1:"已通过"
 };
 
+const missionStatus = {
+  0:'',
+  1:"未处理",
+  2:"已受理",
+  3:"已完成"
+};
+
 const gridTestOption = {
-  0:"",
+  0:"三溪口",
   // 1:"代家沟组",
   // 2:"自生桥组",
   // 3:"三才生组",
@@ -441,3 +470,8 @@ const gridTestOption = {
 }
 
 const notMust = ['file','img_src','img_path','pic'];
+
+const is_not = {
+  0:'否',
+  1:'是'
+}
