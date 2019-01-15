@@ -37,9 +37,9 @@
         {type: 'checkbox'}
         , {title: 'id', align: 'center', type: 'numbers'}
         , {field: 'title', title: '标题', align: 'center'}
-        , {field: 'grid', title: '网格', align: 'center'}
+        , {field: 'grid', title: '所属网格',align:'center',templet:'<span>{{gridOption[d.grid]}}</span>'}
         , {field: 'operator', title: '接收人', align: 'center'}
-        , {field: 'operate_status', title: '处理状态', align: 'center'}
+        , {field: 'operate_status', title: '处理状态', align: 'center', templet:'<span>{{missionStatus[d.operate_status]}}</span>'}
         , {field: '', title: "操作", align: 'center', templet: '#detail'}
       ];
 
