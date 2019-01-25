@@ -78,7 +78,7 @@
         {0:'phone',1:'联系方式',2:data['phone']||''},
         {0:'in_code',1:'入党编号',2:data['in_code']||''},
         {0:'education',1:'学历',2:data['education']||''},
-        {0:"sex",1:{title:'性别',option:sexIndex}},
+        {0:"sex",1:{title:'性别',option:sexIndex}||''},
         {0:'address',1:'地址',2:data['address']||''},
       ]
       var url =  'http://58.144.34.96:5000/web_manager/public/index.php/index/Data/editPartyMember';
